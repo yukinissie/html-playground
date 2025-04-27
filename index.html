@@ -3,112 +3,234 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>Nissie's Portfolio</title>
+    <style>
+      /* CSS Reset */
+      /* * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background-color: #ffffff;
+        color: #333;
+      } */
+
+      /* mobile first */
+
+      main {
+        display: flex;
+        flex-direction: column;
+
+        & aside {
+          padding: 1rem;
+          background: #f5f5f5;
+
+          & img {
+            width: 100%;
+            height: auto;
+            border-radius: 50%;
+          }
+        }
+
+        & .main-content {
+          padding: 1rem;
+        }
+      }
+
+      /* desktop style */
+
+      @media (min-width: 768px) {
+        main {
+          flex-direction: row;
+
+          & aside {
+            width: 250px;
+            flex-shrink: 0;
+          }
+
+          & .main-content {
+            flex: 1;
+          }
+        }
+      }
+    </style>
   </head>
   <body>
-    <h1 class="portfolio-page-title">Portfolio</h1>
-    <p class="greeting-text">Welcome to my portfolio website!</p>
-    <p class="introduction-text">
-      I am a software developer with a passion for creating innovative
-      solutions. I love to learn new technologies and apply them to real-world
-      problems. I believe in the power of technology to make a positive impact
-      on society. I am always looking for new challenges and opportunities to
-      grow. I am excited to share my work with you.
-    </p>
-    <section class="my-introduction-section">
-      <h2 class="my-introduction-section-title">My Introduction</h2>
-      <p class="my-introduction-section-text">
-        I am a software engineer with a passion for web development. I enjoy
-        creating user-friendly applications and exploring new technologies.
+    <header>
+      <h1 class="portfolio-title">Nissie's Portfolio</h1>
+      <nav class="portfolio-nav">
+        <ul>
+          <li><a href="#introduction">Introduction</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#awards">Awards</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="hero">
+      <h2 class="hero-title">
+        Hello, I am Nissie☆, a passionate software engineer.
+      </h2>
+    </div>
+
+    <main>
+      <aside>
+        <h2 class="my-profile-title">My Profile</h2>
+        <img
+          class="my-profile-image"
+          src="/images/profile.jpg"
+          alt="赤い背景に置かれたレトロな白熱電球。どういうわけかは不明だが、緑金色の光を放っている。"
+        />
+
+        <section class="my-general-infomation-section">
+          <h3 class="my-general-infomation-title">My General Infomation</h3>
+          <p class="my-general-infomation-section-text">
+            Here are some of my general information:
+          </p>
+          <ul>
+            <li>Name: Yuki Nishi</li>
+            <li>NickName: Nissie☆ (ニッシー☆)</li>
+            <li>Occupation: Software Engineer</li>
+            <li>Location: Japan</li>
+            <li>Hobby: Anime</li>
+          </ul>
+        </section>
+
+        <section class="my-favorites-section">
+          <h3 class="my-favorites-section-title">My Favorites</h3>
+          <p class="my-favorites-section-text">
+            Here are some of my favorite things:
+          </p>
+          <ul>
+            <li>Anime: Dragon Ball</li>
+            <li>TV Show: Attack on Titan</li>
+            <li>Food: Steak</li>
+            <li>Drink: Sake</li>
+            <li>Fruit: Strawberry</li>
+            <li>Music: EDM</li>
+            <li>Animal: Cat</li>
+            <li>Color: Green</li>
+            <li>Season: Spring</li>
+          </ul>
+        </section>
+
+        <section class="my-sns-section">
+          <h3 class="my-sns-section-title">Social Media</h3>
+          <p class="my-sns-section-text">
+            Here are some of my social media accounts:
+          </p>
+          <ul>
+            <li>
+              X:
+              <a href="https://x.com/yukinissie" title="Nissie's X Profile"
+                >yukinissie</a
+              >
+            </li>
+            <li>
+              GitHub:
+              <a
+                href="https://github.com/yukinissie"
+                title="Nissie's GitHub Profile"
+                >yukinissie</a
+              >
+            </li>
+            <li>
+              Blog:
+              <a
+                href="https://yukinissie.hatenablog.com/"
+                title="Nissie's Blog Homepage"
+                >Nissie☆ Diary (Blog)</a
+              >
+            </li>
+          </ul>
+        </section>
+      </aside>
+
+      <section class="main-content">
+        <h2 class="portfolio-page-title">Nissie's Portfolio</h2>
+        <p class="greeting-text">Welcome to my portfolio website!</p>
+        <p class="introduction-text">
+          I am a software developer with a passion for creating innovative
+          solutions. I love to learn new technologies and apply them to
+          real-world problems. I believe in the power of technology to make a
+          positive impact on society. I am always looking for new challenges and
+          opportunities to grow. I am excited to share my work with you.
+        </p>
+
+        <section class="my-introduction-section" id="introduction">
+          <h3 class="my-introduction-section-title">My Introduction</h3>
+          <p class="my-introduction-section-text">
+            I am a software engineer with a passion for web development. I enjoy
+            creating user-friendly applications and exploring new technologies.
+          </p>
+        </section>
+
+        <section class="my-project-section" id="projects">
+          <h3 class="my-project-section-title">My Projects</h3>
+          <p class="my-project-section-text">
+            I am a software engineer with a passion for web development. Below
+            are some of my projects that showcase my skills and interests.
+          </p>
+          <ul>
+            <li><a href="project1.html">Project 1</a></li>
+            <li><a href="project2.html">Project 2</a></li>
+            <li><a href="project3.html">Project 3</a></li>
+          </ul>
+        </section>
+
+        <section class="my-skills-section" id="skills">
+          <h3 class="my-skills-section-title">My Skills</h3>
+          <p class="my-skills-section-text">
+            I have experience in various programming languages and frameworks.
+            Here are some of the technologies I am proficient in:
+          </p>
+          <ul>
+            <li>React, Next.js</li>
+            <li>TypeScript</li>
+            <li>Java, Kotlin</li>
+            <li>Spring Framework</li>
+            <li>AWS</li>
+          </ul>
+        </section>
+
+        <section class="my-joined-events-section" id="events">
+          <h3 class="my-joined-events-section-title">My Joined Events</h3>
+          <p class="my-joined-events-section-text">
+            I actively participate in various tech events and meetups. Here are
+            some of the events I have attended:
+          </p>
+          <ul>
+            <li>Event 1</li>
+            <li>Event 2</li>
+            <li>Event 3</li>
+          </ul>
+        </section>
+
+        <section class="my-awards-section" id="awards">
+          <h3 class="my-awards-section-title">My Awards</h3>
+          <p class="my-awards-section-text">
+            I have received several awards and recognitions for my work. Here
+            are some of the notable ones:
+          </p>
+          <ul>
+            <li>Award 1</li>
+            <li>Award 2</li>
+            <li>Award 3</li>
+          </ul>
+        </section>
+      </section>
+    </main>
+
+    <footer>
+      <p class="footer-text">
+        &copy; 2025 Nissie's Portfolio. All rights reserved.
       </p>
-    </section>
-    <section class="my-project-section">
-      <h2 class="my-project-section-title">My Projects</h2>
-      <p class="my-project-section-text">
-        I am a software engineer with a passion for web development. Below are
-        some of my projects that showcase my skills and interests.
-      </p>
-      <ul>
-        <li><a href="project1.html">Project 1</a></li>
-        <li><a href="project2.html">Project 2</a></li>
-        <li><a href="project3.html">Project 3</a></li>
-      </ul>
-    </section>
-    <section class="my-skills-section">
-      <h2 class="my-skills-section-title">My Skills</h2>
-      <p class="my-skills-section-text">
-        I have experience in various programming languages and frameworks. Here
-        are some of the technologies I am proficient in:
-      </p>
-      <ul>
-        <li>React, Next.js</li>
-        <li>TypeScript</li>
-        <li>Java, Kotlin</li>
-        <li>Spring Framework</li>
-        <li>AWS</li>
-      </ul>
-    </section>
-    <section class="my-joined-events-section">
-      <h2 class="my-joined-events-section-title">My Joined Events</h2>
-      <p class="my-joined-events-section-text">
-        I actively participate in various tech events and meetups. Here are some
-        of the events I have attended:
-      </p>
-      <ul>
-        <li>Event 1</li>
-        <li>Event 2</li>
-        <li>Event 3</li>
-      </ul>
-    </section>
-    <section class="my-rewards-section">
-      <h2 class="my-awards-section-title">My Awards</h2>
-      <p class="my-awards-section-text">
-        I have received several awards and recognitions for my work. Here are
-        some of the notable ones:
-      </p>
-      <ul>
-        <li>Award 1</li>
-        <li>Award 2</li>
-        <li>Award 3</li>
-      </ul>
-    </section>
-    <section class="my-contact-section">
-      <h2 class="my-contact-section-title">Contact Me</h2>
-      <p class="my-contact-section-text">
-        If you would like to get in touch, feel free to reach out via connect
-        with me on social media.
-      </p>
-      <ul>
-        <li>X: <a href="https://x.com/yukinissie">yukinissie</a></li>
-      </ul>
-    </section>
-    <section class="my-sns-section">
-      <h2 class="my-sns-section-title">Social Media</h2>
-      <p class="my-sns-section-text">
-        Follow me on social media to stay updated with my latest projects and
-        activities.
-      </p>
-      <ul>
-        <li>X: <a href="https://x.com/yukinissie">yukinissie</a></li>
-        <li>GitHub: <a href="https://github.com/yukinissie">yukinissie</a></li>
-        <li>
-          Blog: <a href="https://yukinissie.hatenablog.com/">Hatena Blog</a>
-        </li>
-      </ul>
-    </section>
-    <section class="my-favorite-anime-section">
-      <h2 class="my-favorite-anime-section-title">My Favorite Anime</h2>
-      <p class="my-favorite-anime-section-text">
-        I am a big fan of anime and enjoy watching various genres. Here are some
-        of my favorites:
-      </p>
-      <ul>
-        <li>
-          <a href="https://en.wikipedia.org/wiki/Dragon_Ball_(TV_series)"
-            >Dragon Ball</a
-          >
-        </li>
-      </ul>
-    </section>
+    </footer>
   </body>
 </html>
