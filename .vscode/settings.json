@@ -1,0 +1,19 @@
+{
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "always"
+  },
+  "editor.renderWhitespace": "all",
+  "files.autoSave": "onWindowChange",
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "css.validate": true,
+  "html.validate.styles": true,
+  "html.format.indentInnerHtml": true,
+  "liveServer.settings.port": 5500,
+  "liveServer.settings.root": "/",
+  "path-intellisense.autoSlashAfterDirectory": true
+}
