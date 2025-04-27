@@ -1,0 +1,38 @@
+/* mobile first */
+
+main {
+  display: flex;
+  flex-direction: column;
+
+  & aside {
+    padding: 1rem;
+    background: #f5f5f5;
+
+    & img {
+      width: 100%;
+      height: auto;
+      border-radius: 50%;
+    }
+  }
+
+  & .main-content {
+    padding: 1rem;
+  }
+}
+
+/* desktop style */
+
+@media (min-width: 768px) {
+  main {
+    flex-direction: row;
+
+    & aside {
+      width: 250px;
+      flex-shrink: 0;
+    }
+
+    & .main-content {
+      flex: 1;
+    }
+  }
+}
