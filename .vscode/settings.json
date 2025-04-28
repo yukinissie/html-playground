@@ -15,5 +15,8 @@
   "html.format.indentInnerHtml": true,
   "liveServer.settings.port": 5500,
   "liveServer.settings.root": "/",
-  "path-intellisense.autoSlashAfterDirectory": true
+  "path-intellisense.autoSlashAfterDirectory": true,
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  }
 }
