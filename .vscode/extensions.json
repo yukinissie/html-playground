@@ -1,11 +1,12 @@
 {
-    "recommendations": [
-      "esbenp.prettier-vscode",              // Prettier
-      "ecmel.vscode-html-css",                // HTML CSS Support
-      "ritwickdey.liveserver",                // Live Server
-      "formulahendry.auto-rename-tag",        // Auto Rename Tag
-      "zignd.html-css-class-completion",      // IntelliSense for CSS class names
-      "christian-kohler.path-intellisense",   // Path Intellisense
-      "vincaslt.highlight-matching-tag"       // Highlight Matching Tag
-    ]
-  }
+  "recommendations": [
+    "esbenp.prettier-vscode", // Prettier
+    "ecmel.vscode-html-css", // HTML CSS Support
+    "ritwickdey.liveserver", // Live Server
+    "formulahendry.auto-rename-tag", // Auto Rename Tag
+    "zignd.html-css-class-completion", // IntelliSense for CSS class names
+    "christian-kohler.path-intellisense", // Path Intellisense
+    "vincaslt.highlight-matching-tag", // Highlight Matching Tag
+    "Narlotl.html-validator" // HTML Validator
+  ]
+}
