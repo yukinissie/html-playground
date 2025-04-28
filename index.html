@@ -37,6 +37,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="/styles/reset.css" />
+    <link rel="stylesheet" href="/styles/common.css" />
     <link rel="stylesheet" href="/styles/portfolio.css" />
   </head>
   <body>
@@ -227,11 +228,63 @@
             I actively participate in various tech events and meetups. Here are
             some of the events I have attended:
           </p>
-          <ul>
-            <li>Event 1</li>
-            <li>Event 2</li>
-            <li>Event 3</li>
-          </ul>
+          <table class="my-joined-events-table">
+            <caption class="my-joined-events-table-caption">
+              List of events I have attended
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Event Name</th>
+                <th scope="col">Date</th>
+                <th scope="col">Location</th>
+                <th scope="col">Event Page</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Event 1</td>
+                <td>2025/01/15</td>
+                <td>Tokyo, Japan</td>
+                <td>
+                  <a
+                    href="https://example.com/event1"
+                    title="Event 1 Page"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Event 1 Page</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>Event 2</td>
+                <td>2025/02/20</td>
+                <td>Osaka, Japan</td>
+                <td>
+                  <a
+                    href="https://example.com/event2"
+                    title="Event 2 Page"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Event 2 Page</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>Event 3</td>
+                <td>2025/03/10</td>
+                <td>Nagoya, Japan</td>
+                <td>
+                  <a
+                    href="https://example.com/event3"
+                    title="Event 3 Page"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Event 3 Page</a
+                  >
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </section>
         <hr />
         <section class="my-awards-section" id="awards">
