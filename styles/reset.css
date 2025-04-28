@@ -10,3 +10,13 @@ body {
   background-color: #ffffff;
   color: #333;
 } */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
