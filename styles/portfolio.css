@@ -22,8 +22,7 @@
     }
     & > h1 + p {
       font-size: 1.2rem;
-      color: #777;
-      position: absolute;
+      color: #555;
     }
   }
 }
