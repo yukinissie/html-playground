@@ -3,7 +3,7 @@
 body {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .hero {
@@ -65,6 +65,7 @@ main {
   flex-direction: column;
   background-color: white;
   align-items: center;
+  gap: 2rem;
 
   aside {
     width: 95vw;
