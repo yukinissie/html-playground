@@ -2,26 +2,35 @@
   font-size: 16px;
   --box-shadow: #555 4px 4px 10px;
   --border-radius: 10px;
+
+  --font-size-xxs: 0.667rem; /* 10.67px */
+  --font-size-xs: 0.75rem; /* 12px */
+  --font-size-s: 0.857rem; /* 13.71px */
+  --font-size-m: 1rem; /* 16px */
+  --font-size-l: 1.2rem; /* 19.2px */
+  --font-size-xl: 1.5rem; /* 24px */
+  --font-size-xxl: 2rem; /* 32px */
+
   h1 {
-    font-size: 2rem;
+    font-size: var(--font-size-xxl);
   }
   h2 {
-    font-size: 1.5rem;
+    font-size: var(--font-size-xl);
   }
   h3 {
-    font-size: 1.2rem;
+    font-size: var(--font-size-l);
   }
   h4 {
-    font-size: 1rem;
+    font-size: var(--font-size-m);
   }
   h5 {
-    font-size: 0.857rem;
+    font-size: var(--font-size-s);
   }
   h6 {
-    font-size: 0.75rem;
+    font-size: var(--font-size-xs);
   }
   p {
-    font-size: 1rem;
+    font-size: var(--font-size-m);
     line-height: 1.5rem;
   }
 }
