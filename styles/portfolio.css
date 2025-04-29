@@ -4,6 +4,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  align-items: center;
 }
 
 .hero {
@@ -11,6 +12,7 @@ body {
   background-size: cover;
   background-position: center;
   height: 100vh;
+  width: 100vw;
   display: flex;
   position: relative;
 
@@ -170,6 +172,18 @@ main {
     caption {
       padding: 10px;
     }
+  }
+}
+
+footer {
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow-base);
+  width: 95vw;
+  .footer-text {
+    text-align: center;
+    font-size: var(--font-size-xs);
+    color: #333;
   }
 }
 
