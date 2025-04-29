@@ -48,14 +48,24 @@ ul {
   gap: 0.5rem;
 
   li {
-    padding: 0.5rem;
+    padding: 1rem;
     background-color: hsl(0, 0%, 100%);
     border-radius: var(--border-radius);
-    box-shadow: var(--box-shadow);
+    box-shadow: inset var(--box-shadow-base);
     list-style: animals inside;
 
     span[class="label"] {
       font-weight: bold;
+    }
+
+    ul > li:first-child {
+      margin-top: 0.5rem;
+    }
+
+    ul {
+      li {
+        box-shadow: var(--box-shadow-base);
+      }
     }
   }
 }
@@ -70,7 +80,7 @@ main {
   aside {
     width: 95vw;
     border-radius: var(--border-radius);
-    box-shadow: var(--box-shadow);
+    box-shadow: var(--box-shadow-base);
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -101,6 +111,27 @@ main {
         color: #333;
         margin-top: 0.3rem;
       }
+    }
+  }
+
+  .main-content {
+    width: 95vw;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow-base);
+    background-color: white;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    header {
+      text-align: center;
+    }
+
+    section {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
     }
   }
 }

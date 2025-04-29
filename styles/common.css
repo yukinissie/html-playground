@@ -1,6 +1,6 @@
 :root {
   font-size: 16px;
-  --box-shadow: #555 4px 4px 10px;
+  --box-shadow-base: #555 2px 4px 7px;
   --border-radius: 10px;
 
   --font-size-xxs: 0.667rem; /* 10.67px */
