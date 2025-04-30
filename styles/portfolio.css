@@ -89,7 +89,7 @@ main {
     "aside"
     "main-content";
   justify-items: center;
-  gap: 2rem;
+  gap: 1rem;
 
   aside {
     width: 95vw;
@@ -235,5 +235,11 @@ footer {
     text-align: center;
     font-size: var(--font-size-xs);
     color: #333;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  footer {
+    width: 1140px;
   }
 }
