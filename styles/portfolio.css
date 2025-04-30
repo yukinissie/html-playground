@@ -116,6 +116,7 @@ main {
         font-size: 0.9rem;
         color: #333;
         margin-top: 0.3rem;
+        font-style: italic;
       }
     }
   }
@@ -132,6 +133,11 @@ main {
 
     header {
       text-align: center;
+
+      .portfolio-page-date {
+        font-size: var(--font-size-xs);
+        color: #333;
+      }
     }
 
     section {
@@ -185,6 +191,7 @@ footer {
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow-base);
   width: 95vw;
+  margin-bottom: 1rem;
 
   .footer-text {
     text-align: center;
