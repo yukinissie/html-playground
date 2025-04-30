@@ -185,7 +185,6 @@ footer {
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow-base);
   width: 95vw;
-  margin-bottom: 20px;
 
   .footer-text {
     text-align: center;
