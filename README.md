@@ -4,7 +4,7 @@ HTML/CSS の練習。あくまでいい感じの DOM 構造を組む練習のた
 
 ## 実際にできたもの
 
-[AWS Amplify にホストされた Nissie☆'s Sample Portfolio を見てみる](https://main.d1c1xz9wr3dnf.amplifyapp.com/)
+[AWS Amplify にホストされた Nissie☆'s Sample Portfolio を見てみる](https://sample-portfolio.yukinissie.com/)
 
 ## スクリーンショット集
 
