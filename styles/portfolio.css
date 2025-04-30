@@ -60,9 +60,8 @@ ul {
   gap: 0.5rem;
 
   li {
-    padding: 1rem;
+    padding: 0 1rem;
     border-radius: var(--border-radius);
-    box-shadow: inset var(--box-shadow-base);
     list-style: animals inside;
 
     span[class="label"] {
@@ -71,12 +70,6 @@ ul {
 
     ul > li:first-child {
       margin-top: 0.5rem;
-    }
-
-    ul {
-      li {
-        box-shadow: var(--box-shadow-base);
-      }
     }
   }
 }
@@ -168,7 +161,7 @@ main {
 
 @media only screen and (min-width: 768px) {
   main {
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1.5fr 3fr;
     grid-template-rows: auto;
     grid-template-areas: "aside main-content";
     justify-self: center;
