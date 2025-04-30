@@ -1,8 +1,13 @@
 /* mobile first */
 
 body {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
   gap: 1rem;
   align-items: center;
   background-image: url("../images/hero.jpg");
@@ -77,9 +82,13 @@ ul {
 }
 
 main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "aside"
+    "main-content";
+  justify-items: center;
   gap: 2rem;
 
   aside {
@@ -145,6 +154,34 @@ main {
       gap: 0.5rem;
     }
   }
+
+  @media only screen and (min-width: 768px) {
+    aside {
+      width: 100%;
+    }
+
+    .main-content {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  main {
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto;
+    grid-template-areas: "aside main-content";
+    justify-self: center;
+    gap: 1rem;
+    align-items: start;
+    width: 95vw;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  main {
+    width: 1140px;
+  }
 }
 
 .table-container {
@@ -192,26 +229,11 @@ footer {
   width: 95vw;
   margin-bottom: 1rem;
   background-color: white;
+  justify-self: center;
 
   .footer-text {
     text-align: center;
     font-size: var(--font-size-xs);
     color: #333;
-  }
-}
-
-/* desktop style */
-
-@media (min-width: 768px) {
-  main {
-    flex-direction: row;
-    width: 95vw;
-    justify-content: center;
-    gap: 1rem;
-    align-items: flex-start;
-
-    aside {
-      flex-shrink: 2;
-    }
   }
 }
